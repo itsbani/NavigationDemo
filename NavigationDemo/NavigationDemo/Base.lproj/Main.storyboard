@@ -122,15 +122,21 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="RaK-6f-OnX"/>
                     </view>
+                    <connections>
+                        <outlet property="FirstName" destination="PGR-io-x0J" id="ZIg-3K-gRX"/>
+                        <outlet property="email" destination="Br9-FR-BWQ" id="nkS-Qy-bZi"/>
+                        <outlet property="firstName" destination="PGR-io-x0J" id="Ex2-pf-9Qt"/>
+                        <outlet property="lastName" destination="0Ve-bK-4jX" id="ZfR-w0-rcv"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="704-ac-lai" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-111.2" y="-403.44827586206901"/>
         </scene>
-        <!--View Controller-->
+        <!--ProfileView-->
         <scene sceneID="76t-2m-pOp">
             <objects>
-                <viewController id="VOR-eU-q8B" sceneMemberID="viewController">
+                <viewController id="VOR-eU-q8B" userLabel="ProfileView" customClass="ProfileViewController" customModule="NavigationDemo" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="RIY-g6-2Id">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -160,6 +166,11 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="mJJ-mh-B22"/>
                     </view>
+                    <connections>
+                        <outlet property="email" destination="DlJ-dj-YcV" id="52U-9h-mxi"/>
+                        <outlet property="firstName" destination="Sgo-qr-W8S" id="ZBH-9W-sPk"/>
+                        <outlet property="lastName" destination="lZW-fA-bg3" id="wUK-XJ-m5i"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="d6O-ug-cOp" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

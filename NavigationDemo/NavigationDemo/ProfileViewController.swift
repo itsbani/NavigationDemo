@@ -1,5 +1,5 @@
 //
-//  FormViewController.swift
+//  ProfileViewController.swift
 //  NavigationDemo
 //
 //  Created by Canadore Student on 2023-03-22.
@@ -8,25 +8,27 @@
 
 import UIKit
 
-class FormViewController: UIViewController {
+class ProfileViewController: UIViewController {
 
-    @IBOutlet weak var email: UITextField!
+    @IBOutlet weak var email: UILabel!
+    @IBOutlet weak var lastName: UILabel!
+    @IBOutlet weak var firstName: UILabel!
     
-    @IBOutlet weak var lastName: UITextField!
-    @IBOutlet weak var firstName: UITextField!
+    var fname = "", lname="", em=""
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        firstName.text = "First Name: " + fname
+        lastName.text = "Last Name: " + lname
+        email.text = "Email: " + em
 
         // Do any additional setup after loading the view.
     }
 
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        let destVC = segue.destination as! ProfileViewController
-        destVC.fname = firstName.text!
-        destVC.lname = lastName.text!
-        destVC.em = email.text!
-       
+    override func didReceiveMemoryWarning() {
+        super.didReceiveMemoryWarning()
+        // Dispose of any resources that can be recreated.
     }
     
 
