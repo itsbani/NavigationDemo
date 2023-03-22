@@ -10,11 +10,15 @@ import UIKit
 
 class ProfileViewController: UIViewController {
 
+    @IBOutlet weak var postal: UILabel!
+    @IBOutlet weak var city: UILabel!
+    @IBOutlet weak var country: UILabel!
+    @IBOutlet weak var address: UILabel!
     @IBOutlet weak var email: UILabel!
     @IBOutlet weak var lastName: UILabel!
     @IBOutlet weak var firstName: UILabel!
     
-    var fname = "", lname="", em=""
+    var fname = "", lname="", em="" , add="", countr="" , cit="" , pc=""
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -22,6 +26,10 @@ class ProfileViewController: UIViewController {
         firstName.text = "First Name: " + fname
         lastName.text = "Last Name: " + lname
         email.text = "Email: " + em
+        address.text = "Address: " + add
+        country.text = "Country: " + countr
+        city.text = "City: " + cit
+        postal.text = "Postal Code: " + pc
 
         // Do any additional setup after loading the view.
     }

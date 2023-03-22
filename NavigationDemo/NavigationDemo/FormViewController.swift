@@ -10,6 +10,13 @@ import UIKit
 
 class FormViewController: UIViewController {
 
+    
+    
+    @IBOutlet weak var postal: UITextField!
+    @IBOutlet weak var city: UITextField!
+    @IBOutlet weak var country: UITextField!
+    @IBOutlet weak var address: UITextField!
+    
     @IBOutlet weak var email: UITextField!
     
     @IBOutlet weak var lastName: UITextField!
@@ -26,7 +33,11 @@ class FormViewController: UIViewController {
         destVC.fname = firstName.text!
         destVC.lname = lastName.text!
         destVC.em = email.text!
-       
+        destVC.add = address.text!
+        destVC.countr = country.text!
+        destVC.cit = city.text!
+        destVC.pc = postal.text!
+      
     }
     
 
